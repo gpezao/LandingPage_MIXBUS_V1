@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji';
+
+  /* Paleta MIXBUS */
+  --color-mixbus-bg: #0a0a0f;
+  --color-mixbus-surface: #111118;
+  --color-mixbus-surface-2: #1a1a24;
+  --color-mixbus-accent: #c8f135;
+  --color-mixbus-accent-hover: #d4f04a;
+  --color-mixbus-error: #ff4d4d;
+  --color-mixbus-warning: #ffb347;
+  --color-mixbus-info: #4d9fff;
+  --color-mixbus-muted: #5a5a7a;
+  --color-mixbus-border: #1e1e2a;
+  --color-mixbus-white: #ffffff;
+  --color-mixbus-black: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--color-mixbus-bg);
+  color: var(--color-mixbus-muted);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+::selection {
+  background-color: rgba(200, 241, 53, 0.22);
+  color: var(--color-mixbus-white);
+}
