@@ -169,12 +169,13 @@ function ConnectionOverlay({
   }, [activeId, brainRef, cardRefs, wrapRef])
 
   useEffect(() => {
-    update()
+    const raf = requestAnimationFrame(update)
     const ro = new ResizeObserver(() => update())
     if (wrapRef.current) ro.observe(wrapRef.current)
     window.addEventListener('scroll', update, true)
     window.addEventListener('resize', update)
     return () => {
+      cancelAnimationFrame(raf)
       ro.disconnect()
       window.removeEventListener('scroll', update, true)
       window.removeEventListener('resize', update)
@@ -313,7 +314,7 @@ export function CoreFeaturesSection() {
                   aria-hidden
                 />
                 <span className="absolute bottom-[11%] z-[1] text-[10px] font-semibold uppercase tracking-[0.22em] text-mixbus-accent/85">
-                  
+                  Cerebro Central
                 </span>
               </motion.div>
 

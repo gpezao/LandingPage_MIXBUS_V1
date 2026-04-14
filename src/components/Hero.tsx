@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { DashboardMockup } from './DashboardMockup'
 
 export function Hero() {
   const reduce = useReducedMotion()
@@ -77,15 +78,7 @@ export function Hero() {
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
           className="flex w-full max-w-xl flex-1 justify-center lg:justify-end"
         >
-          {/*
-            Área de vídeo: coloca aquí un <video controls className="size-full object-cover" />
-            o un iframe (YouTube/Vimeo). El contenedor mantiene relación 16:9.
-          */}
-          <div
-            role="region"
-            aria-label="Vídeo de producto"
-            className="relative aspect-video w-full overflow-hidden rounded-2xl border border-dashed border-mixbus-border bg-mixbus-surface/30 ring-1 ring-mixbus-accent/5"
-          />
+          <DashboardMockup />
         </motion.div>
       </div>
     </section>

@@ -35,9 +35,6 @@ export function FinalCTA() {
         </div>
       </motion.div>
 
-      <footer className="mx-auto mt-20 max-w-6xl border-t border-mixbus-border/80 pt-10 text-center text-xs text-mixbus-muted">
-        <p>© {new Date().getFullYear()} MIXBUS. Inteligencia operacional para eventos en vivo.</p>
-      </footer>
     </section>
   )
 }
