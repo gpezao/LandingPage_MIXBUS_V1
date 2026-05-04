@@ -26,7 +26,7 @@ export function FinalCTA() {
           </p>
           <div className="mt-10">
             <a
-              href="mailto:demo@mixbus.com?subject=Demo%20MIXBUS"
+              href="mailto:mixbuscorp@gmail.com?subject=Demo%20MIXBUS"
               className="inline-flex min-h-[52px] min-w-[200px] items-center justify-center rounded-full bg-mixbus-accent px-10 text-sm font-semibold text-mixbus-black shadow-[0_0_0_1px_rgba(255,255,255,0.06)] transition hover:bg-mixbus-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mixbus-accent"
             >
               Solicitar Demo
